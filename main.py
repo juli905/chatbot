@@ -3,13 +3,14 @@ def diga_hora():
     agora = datetime.now().strftime("%H:%M:%S")
     return f"A hora atual é: {agora}"
 
+
 def chatbot():
     print("Olá eu sou o seu chatbot! Como posso te ajudar? (digite 'sair' para encerrar)")
 
     respostas = {
         "olá": "olá como você está?",
         "tudo bem": "estou bem, obrigada por perguntar e você?",
-        "sair": "até logo foi bom conversa com você",
+        "sair": "até logo foi bom conversa com você"
         
     }
     comandos = {
@@ -29,8 +30,13 @@ def chatbot():
        
         elif usuario in comandos:
             print(f"chatbot: {comandos[usuario]()}")
+
+            
         else:
             print("chatbot: desculpe, não entendi. Pode reformula sua pergunta?")
 
 if __name__ == "__main__":
     chatbot()
+
+
+   
